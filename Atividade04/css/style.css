@@ -1,0 +1,74 @@
+@font-face {
+    font-family: VCR OSD MONO;
+    src: url("../assets/fonts/VCR_OSD_MONO_1.001.ttf");
+}
+
+body {
+    color: white;
+    background-color: #252525;
+    font-family: VCR OSD MONO;
+
+}
+
+ul {
+display: flex;
+justify-content: space-between;
+list-style-type: none;
+align-items: center;
+padding: 16px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 200px;
+    height: 200px;  
+    border-radius: 50%;
+    border: 5px solid #b30000;
+}
+
+.center {
+    text-align: center;
+    color: #b30000;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: none;
+    border: none;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+footer img:hover {
+    width: 45px;
+    height: 45px;
+    border-radius: none;
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+nav a:hover {
+    color:gray;
+}
