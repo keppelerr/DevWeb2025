@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de desconto</title>
+</head>
+<body>
+    <h1>Questão 12</h1>
+    <script>
+
+        let preco = Number(prompt("Informe o preço original: "));
+        let desconto = Number(prompt("Informe o desconto: "));
+
+        let calculo;
+        calculo = preco - (preco * (desconto / 100));
+
+        document.write(`Preço final: R$${calculo.toFixed(2)}`);
+
+    </script>
+</body>
+</html>
