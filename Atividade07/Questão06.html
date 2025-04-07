@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            padding: 400px;
+        }
+        #botao {
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="botao">
+        Clique aqui!
+    </div>
+    <script>
+        let clique = document.querySelector('body');
+        clique.addEventListener('click', clicar);
+
+        function clicar(){
+            clique.innerText = 'Clicou!';
+            clique.style.background = 'white';
+            clique.style.color = 'black';
+        }
+
+    </script>
+</body>
+</html>

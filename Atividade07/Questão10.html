@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form {
+        margin-bottom: 20px;
+    }
+    input, textarea {
+        display: block;
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 300px;
+    }
+    
+    </style>
+</head>
+<body>
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="text" id="email" placeholder="Seu emal" required>
+        <textarea id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            const dados_exibidos = document.getElementById('resultado');
+            dados_exibidos.innerHTML = `
+            <h3>Dados enviados:</h3>
+            <p><strong>Nome:</strong> ${nome}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Mensagem:</strong> ${mensagem}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

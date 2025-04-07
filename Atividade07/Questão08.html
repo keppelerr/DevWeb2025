@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+    <style>
+    #contador {
+        margin: 10px;
+    }
+    button {
+        padding: 5px 15px;
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div id='contador'>0</div>
+    <button onclick="alterar_contador(-1)">-</button>
+    <button onclick="alterar_contador(1)">+</button>
+    
+    <script>
+    let valor_contador = 0;
+
+    function alterar_contador(mudança) {
+        valor_contador += mudança;
+        document.getElementById('contador').innerText = valor_contador;
+    }
+    </script>
+</body>
+</html>
